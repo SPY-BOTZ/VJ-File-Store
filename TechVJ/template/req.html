@@ -1,443 +1,171 @@
+<!--  Don't Remove Credit @VJ_Bots Subscribe YouTube Channel For Amazing Bot @Tech_VJ Ask Doubt on telegram @KingVJ01 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://i.ibb.co/qJyZWCv/20230629-081948-0000.png" type="image/x-icon">
+    <meta property="og:image" content="https://i.ibb.co/qJyZWCv/20230629-081948-0000.png" itemprop="thumbnailUrl">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{file_name}} - ᴘʀɪᴍᴇ ɴᴇᴛᴡᴏʀᴋ</title>
-    <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Plyr CSS -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <title>{{file_name}} | Tech VJ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        /* --- ১. থিম ভেরিয়েবলস (Dark/Light) --- */
-        :root {
-            --bg-body: #0b0f15;
-            --bg-card: #121824;
-            --bg-btn: #1a2232;
-            --text-primary: #ffffff;
-            --border-accent: #00e5ff;
-        }
-        body.light {
-            --bg-body: #f1f5f9;
-            --bg-card: #ffffff;
-            --bg-btn: #e2e8f0;
-            --text-primary: #1e293b;
-            --border-accent: #2563eb;
-        }
-
-        /* --- ২. ফুল-উইডথ চিকন প্রগ্রেস বার (Micro-Seeking) --- */
-        :root {
-            --plyr-color-main: var(--border-accent);
-            --plyr-range-track-height: 4px; 
-            --plyr-range-thumb-height: 14px; 
-        }
-        .plyr__progress {
-            left: 0 !important; right: 0 !important; bottom: 0 !important;
-            position: absolute !important; width: 100% !important; padding: 0 !important; margin: 0 !important; z-index: 10;
-        }
-        .plyr--video .plyr__controls { padding-bottom: 15px !important; }
-
-        body { 
-            background-color: var(--bg-body) !important; color: var(--text-primary) !important; 
-            font-family: 'Poppins', sans-serif; transition: all 0.4s ease;
-        }
-
-        /* --- ৩. সব অরিজিনাল এনিমেশনস --- */
-        @keyframes bounce-icon { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
-        @keyframes pulse-icon { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
-        @keyframes wiggle-icon { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(-12deg); } 75% { transform: rotate(12deg); } }
-        @keyframes beat-icon { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.25); } 30% { transform: scale(1); } 45% { transform: scale(1.25); } 60% { transform: scale(1); } }
-
-        .anim-bounce { animation: bounce-icon 2s infinite ease-in-out; }
-        .anim-pulse { animation: pulse-icon 1.5s infinite ease-in-out; }
-        .anim-wiggle { animation: wiggle-icon 2s infinite linear; }
-        .anim-beat { animation: beat-icon 2.5s infinite ease-in-out; }
-
-        .btn-hover { transition: all 0.3s ease; }
-        .btn-hover:hover { transform: translateY(-2px); filter: brightness(1.2); }
-
-        /* থিম বাটন ফিক্সড পজিশন */
-.theme-wrapper {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 10000; /* একদম সবার উপরে থাকবে */
-}
-
-.theme-btn {
-    background: var(--bg-card);
-    border: 2px solid var(--border-accent);
-    padding: 8px 12px;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 11px;
-    font-weight: 800;
-    color: var(--text-primary);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-}
-
-/* মোবাইলের জন্য স্মার্ট অ্যাডজাস্টমেন্ট: শুধু আইকন দেখাবে */
-@media (max-width: 480px) {
-    .theme-btn span {
-        display: none; /* মোবাইলে 'LIGHT MODE' লেখাটি লুকিয়ে ফেলবে */
-    }
-    .theme-btn {
-        padding: 10px; /* আইকনটিকে বড় এবং ক্লিকেবল রাখবে */
-    }
-    .theme-wrapper {
-        top: 10px;
-        right: 10px;
-    }
-}
-
-        /* --- ৫. ভাসমান ড্যামকা ও ফিক্সড ফুটার --- */
-        .fixed-copyright {
-            position: fixed; bottom: 0; left: 0; width: 100%; background: var(--bg-body); 
-            backdrop-filter: blur(10px); text-align: center; padding: 10px 0; font-size: 11px; font-weight: bold;
-            border-top: 1px solid rgba(128, 128, 128, 0.2); z-index: 1000;
-        }
-        .dmca-floating { position: fixed; bottom: 65px; right: 20px; z-index: 999; }
-        @keyframes dmca-color {
-            0%, 100% { background-color: #00e5ff; color: #000; box-shadow: 0 0 20px rgba(0, 229, 255, 0.5); }
-            50% { background-color: #2563eb; color: #fff; box-shadow: 0 0 20px rgba(37, 99, 235, 0.6); }
-        }
-        .dmca-btn { animation: dmca-color 4s infinite ease-in-out; }
-
-        .bg-card-theme { background-color: var(--bg-card) !important; border-color: rgba(128, 128, 128, 0.2) !important; }
-        .bg-btn-theme { background-color: var(--bg-btn) !important; border-color: rgba(128, 128, 128, 0.2) !important; }
-
-        /* প্লেয়ারের মাঝখানে বাটনগুলো সাজানোর জন্য */
-.plyr__controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* ফাঁকা জায়গায় নতুন বাটনগুলোর স্টাইল */
-.custom-player-btns {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-}
-
-.custom-player-btns button {
-    background: none;
-    border: none;
-    color: #00e5ff;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.custom-player-btns button:active { transform: scale(0.9); }
-
-        /* ব্রাইটনেস স্লাইডার পপ-আপ স্টাইল */
-#brightness-popup {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.85);
-    padding: 15px 25px;
-    border-radius: 15px;
-    border: 1px solid #00e5ff;
-    z-index: 200;
-    display: none; /* শুরুতে লুকানো থাকবে */
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
-}
-
-#brightness-popup span { font-size: 10px; font-weight: bold; color: #00e5ff; }
-
-/* স্লাইডার লুক */
-#br-slider {
-    -webkit-appearance: none;
-    width: 150px;
-    height: 4px;
-    background: #333;
-    border-radius: 5px;
-    outline: none;
-}
-
-#br-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 15px; height: 15px;
-    background: #00e5ff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-/* ব্রাইটনেস ওভারলে (ভিডিওর ওপর কাজ করবে) */
-#brightness-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: black;
-    pointer-events: none;
-    opacity: 0; /* ডিফল্ট ০ থাকবে */
-    z-index: 1;
-        }
-    </style>
 </head>
-<body class="antialiased pb-32">
 
-    <!-- Theme Toggle -->
-    <div class="theme-wrapper">
-    <button id="theme-toggle-btn" class="theme-btn">
-        <i class="fa-solid fa-circle-half-stroke" id="theme-icon"></i>
-        <span id="theme-text">LIGHT MODE</span>
-    </button>
-    </div>
+<body class="bg-black">
+    <header>
+        <!-- Navbar -->
+            <nav class="navbar bg-dark p-lg-4 p-2">
+               <div class="d-flex ">
+                 <!-- Sidebar Menu -> Open Button -->
+                 <button class="btn border border-danger-subtle wow animate__animated animate__fadeInLeft animate__delay-1s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16"><path fill="url(#PMWUiMSnUf2R_PPJ6rqZea_44112_gr1)" d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/></svg>
+                </button>
+                <!-- sidebar menu -->
+                <div class="offcanvas offcanvas-start bg-dark-subtle " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header d-block">
+                    <div class="justify-content-end align-items-end d-flex">
+                        <button type="button bg-dark " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex ">
+                        <!-- logo -->
+                        <img src="https://i.ibb.co/qJyZWCv/20230629-081948-0000.png" width="80" height="80" class="rounded" style="box-shadow: 3px 5px 11px black;" alt="">
+                        <div class="p-3">
+                            <h4 class="offcanvas-title font-semibold wow animate__animated animate__fadeInLeft " id="offcanvasWithBothOptionsLabel" style="text-shadow: 3px 5px 11px black;" >TECH VJ</h4>
+                            <p class="text-red-600 font-semibold wow animate__animated animate__fadeIn animate__delay-1s animate__infinite">The One & Only</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/VJBots" target="_blank" class="btn btn-dark w-100 text-light fw-semibold flex justify-center items-center gap-2 mt-2 wow animate__animated animate__fadeInDown  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>    
+                        Follow TECH VJ
+                    </a>
+                    <div class="d-flex gap-1 px-1 mt-1 wow animate__animated animate__fadeInLeft animate__delay-1s ">
+                        <a href="https://teleram.me/KingVJ01" target="_blank" class="btn btn-secondary w-50 text-light fw-semibold flex justify-center items-center gap-2 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                              </svg>
+                            Updates
+                        </a>
+                        <a href="https://telegram.me/vj_bots" target="_blank" class="btn btn-primary w-50 text-light  fw-semibold flex justify-center items-center gap-2 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
+                                <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
+                              </svg>
+                            Fork repo
+                        </a>
+                        <a href="https://youtube.com/@Tech_VJ" target="_blank" class="btn btn-danger w-50 text-light fw-semibold flex justify-center items-center gap-2 text-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                              </svg>
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="wow animate__animated animate__fadeInLeft ">
+                        <h2 class="font-semibold" style="text-shadow: 1px 2px 8px black;">Explore</h2>
+                    </div>
+                    <div class=" d-block px-5 wow animate__animated animate__fadeInRight ">
+                        <a href="https://t.me/vj_bots" type="button" class="btn btn-outline-secondary w-100 mt-1 wow animate__animated animate__fadeIn ">Trending Movies</a>
+                        <a href="https://t.me/vj_bots" type="button" class="btn btn-outline-secondary w-100 mt-1">Newly Released Movies</a>
+                        <a href="https://t.me/vj_bots" type="button" class="btn btn-outline-secondary w-100 mt-1">Popular on MoviesAdda</a>
+                        <a href="https://t.me/vj_bots" type="button" class="btn btn-outline-secondary w-100 mt-1">Bollywood Movies</a>
+                        <a href="https://t.me/vj_bots" type="button" class="btn btn-outline-secondary w-100 mt-1">Hollwood Movies</a>
+                        <a href="https://t.me/vj_bots" type="button" class="btn btn-outline-secondary w-100 mt-1">webseries</a>
+                    </div>
+                    
+                <!-- section -->
+                <div class="m-2 mt-4">
+                    <p>
+                        <a class="btn btn-primary w-100 flex justify-center items-center gap-2" data-bs-toggle="collapse" href="" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.133l.941.502A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765L2 3.133V2Zm0 2.267-.47.25A1 1 0 0 0 1 5.4v.817l1 .6v-2.55Zm1 3.15 3.75 2.25L8 8.917l1.25.75L13 7.417V2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v5.417Zm11-.6 1-.6V5.4a1 1 0 0 0-.53-.882L14 4.267v2.55ZM8 2.982C9.664 1.309 13.825 4.236 8 8 2.175 4.236 6.336 1.31 8 2.982Zm7 4.401-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734Z"/>
+                              </svg>
+                            <span class="ps-2">watch Deploy tutorial</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                              </svg>
+                        </a>
+                    </p>
+                </div>
+                  
+                    <!-- footer of sidebar -->
+                    
+                    <div class="text-center w-100">
+                        <div class="mt-3">
+                            <h5 class="flex justify-center items-center gap-2">
+                                <span class="text-dark font-monospace" style="text-shadow: 3px 5px 11px rgb(126, 10, 80);">With Love</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chat-heart" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" fill="#dc0303" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                                  </svg>
+                            </h5>
+                        </div>
+                        <div class="text-center w-100 px-2 flex justify-center items-center gap-2">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle " viewBox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/></svg></span>
+                            <span class="font-bold bg-clip-text text-[18px] text-transparent bg-gradient-to-r from-yellow-400  via-orange-700 to-red-700" style="text-shadow: 3px 5px 11px black;">Tech VJ</span>
+                        </div>
+                    </div>
 
-    <!-- Header Section -->
-    <header class="flex flex-col items-center pt-14 pb-4"> <!-- pt-14 করা হয়েছে গ্যাপের জন্য -->
-    <h1 class="text-3xl md:text-4xl font-extrabold flex items-center gap-3">
-        <i class="fas fa-clapperboard text-rose-600 anim-beat"></i>
-        <div><span class="text-pink-400">ᴘʀɪᴍᴇ</span> <span class="text-[#00e5ff]">ɴᴇᴛᴡᴏʀᴋ</span></div>
-    </h1>
-        <p class="text-[12px] text-gray-400 font-bold mt-1 anim-pulse uppercase tracking-widest">
-            <i class="fas fa-bolt"></i> 𝐏𝐫𝐢𝐦𝐞 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦
-        </p>
+                    <!-- <p>Try scrolling the rest of the page to see this option in action.</p> -->
+                </div>
+                </div>
+
+                <!-- web title -->
+                <div class="container-fluid">
+                    <a class="navbar-brand  text-light fw-bold " href="https://t.me/vj_bots">
+                        <span class="bg-clip-text sm:text-[25px] text-[22px] text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+                            For Movies 
+                          </span>
+                    </a>
+                  </div>
+               </div>
+            </nav>
+            <!-- ./Navbar -->
     </header>
+    <!-- ./Header -->
 
-    <!-- Main Container -->
-    <main class="w-full max-w-[600px] mx-auto px-4 z-10 relative">
-        <div class="bg-card-theme rounded-xl overflow-hidden border shadow-2xl mb-6 flex flex-col relative">
-            <div class="p-4 border-b bg-card-theme">
-                <h2 class="text-[#00e5ff] text-[15px] font-bold flex items-start gap-2">
-                    <i class="fas fa-play-circle mt-1 anim-pulse"></i> {{file_name}}
-                </h2>
+    <div class="bg-black  text-light"  >
+        <!-- file Name -> to be displayed here  -->
+        <div class="justify-content-center align-items-center w-100 d-flex">
+            <div id="file-name" class="tex-center text-lg max:w-74  p-2 flex-wrap text-center justify-center items-center">
+                <p class="fw-bold"> 
+                    <span id="myDiv" class="h6 flex-wrap text-center justify-center items-center card-title wow animate__animated animate__fadeInRight" >
+                        {{file_name}}
+                    </span>
+                </p>
             </div>
-
-            <!-- Video Player -->
-            <div class="relative w-full aspect-video bg-black overflow-hidden">
-                <video id="player" playsinline controls preload="auto">
-                    <source src="{{file_url}}" type="video/mp4" />
+        </div>
+        <!-- Online Video Player -> to be displayed here  -->
+        <div class="justify-content-center align-items-center w-100 d-flex  flex-wrap">
+            <div class="lg:w-9/12 lg:px-12 lg:py-4 w-full  border border-danger wow animate__animated animate__fadeInLeft">
+                <video id="player" class="player " playsinline controls>
+                    <source src="{{file_url}}" type="video/mp4">
                 </video>
             </div>
-
-            <!-- File Info সেকশনটি এভাবে পরিবর্তন করুন -->
-<div class="flex justify-between p-3 px-5 text-[12px] font-black tracking-widest bg-card-theme">
-    <div class="text-gray-400"><span class="text-green-500">SIZE:</span> {{file_size}}</div>
-    <div class="text-gray-400"><span class="text-green-500">TIME:</span> <span id="clock">00:00:00</span></div>
-</div>
         </div>
 
-        <!-- Buttons Section -->
-        <div class="space-y-4">
-            <div class="grid grid-cols-2 gap-3">
-                <button onclick="streamDownload()" class="btn-hover bg-[#e11d48] text-white rounded-full py-2.5 font-bold text-sm shadow-lg">
-                    <i class="fas fa-bolt anim-bounce text-yellow-300 mr-1"></i> DOWNLOAD
-                </button>
-                <button onclick="watchOnline()" class="btn-hover bg-[#2563eb] text-white rounded-full py-2.5 font-bold text-sm shadow-lg">
-                    <i class="fas fa-folder-open anim-wiggle mr-1"></i> WATCH ONLINE
-                </button>
-            </div>
+        <!-- External video player section -->
+            <div class="justify-content-center align-items-center w-100 d-flex">
+                    <div class="row d-flex w-100 justify-content-center align-items-center">
 
-            <div class="grid grid-cols-2 gap-3">
-                <button onclick="vlc_player()" class="btn-hover bg-btn-theme border text-gray-200 rounded-full py-2 text-[12px] font-bold">
-                    <i class="fas fa-video anim-beat text-orange-500 mr-1"></i> VLC PLAYER
-                </button>
-                <button onclick="mx_player()" class="btn-hover bg-btn-theme border text-gray-200 rounded-full py-2 text-[12px] font-bold">
-                    <i class="fas fa-play anim-pulse text-blue-400 mr-1"></i> MX PLAYER
-                </button>
-            </div>
-            
-            <div class="grid grid-cols-2 gap-3">
-                <button onclick="playit_player()" class="btn-hover bg-btn-theme border text-green-400 rounded-full py-2 text-[12px] font-bold">
-                    <i class="fas fa-play-circle anim-beat mr-1"></i> PLAYIT
-                </button>
-                <button onclick="system_player()" class="btn-hover bg-btn-theme border text-yellow-400 rounded-full py-2 text-[12px] font-bold">
-                    <i class="fas fa-desktop anim-pulse mr-1"></i> SYSTEM
-                </button>
-            </div>
-
-            <div class="grid grid-cols-3 gap-2">
-                <button onclick="km_player()" class="btn-hover bg-btn-theme border text-gray-200 rounded-full py-2 text-[10px] font-bold">
-                    <i class="fas fa-film anim-bounce text-purple-400 mr-1"></i> KM PLAYER
-                </button>
-                <button onclick="kodi_player()" class="btn-hover bg-btn-theme border text-gray-200 rounded-full py-2 text-[10px] font-bold">
-                    <i class="fas fa-border-all anim-pulse text-blue-300 mr-1"></i> KODI
-                </button>
-                <button onclick="n_player()" class="btn-hover bg-btn-theme border text-cyan-400 rounded-full py-2 text-[10px] font-bold">
-                    <i class="fas fa-mobile-screen anim-wiggle mr-1"></i> NPLAYER
-                </button>
-            </div>
-        </div>
-    </main>
-
-    <!-- ড্যামকা ভাসমান বাটন -->
-    <div class="dmca-floating">
-        <button onclick="openModal()" class="dmca-btn px-6 py-2 rounded-full font-black text-xs uppercase shadow-2xl border border-white/20">
-            <i class="fas fa-shield-halved anim-wiggle mr-1"></i> DMCA
-        </button>
-    </div>
-
-    <!-- কপিরাইট ফুটার -->
-    <div class="fixed-copyright">
-        © 2022-2026 <a href="https://t.me/PrimeXBots" class="text-[#00e5ff] underline">ᴘʀɪᴍᴇXʙᴏᴛꜱ</a> | ꜱᴇᴄᴜʀᴇ ʙʏ ᴘʀɪᴍᴇ ɴᴇᴛᴡᴏʀᴋ 🤝
-    </div>
-
-    <!-- DMCA Modal (Restored Everything) -->
-    <div id="infoModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[2000] hidden items-center justify-center p-4">
-        <div id="modalBox" class="bg-[#121824] border-2 border-[#1f2937] rounded-2xl w-full max-w-lg overflow-hidden flex flex-col shadow-2xl">
-            <div class="p-4 border-b border-gray-800 flex justify-between items-center bg-[#121824]">
-                <h3 class="font-bold text-[#00e5ff] italic uppercase tracking-wider">
-                    <i class="fas fa-circle-info mr-2"></i> Bot Information
-                </h3>
-                <button onclick="closeModal()" class="text-gray-400 hover:text-rose-500 text-2xl">&times;</button>
-            </div>
-            <div class="p-5 overflow-y-auto space-y-4 max-h-[70vh]">
-                <div class="bg-gray-800/40 border-l-4 border-yellow-500 p-4 rounded-r-xl">
-                    <h4 class="text-yellow-500 font-bold mb-1 uppercase text-xs">
-                        <i class="fas fa-file-contract mr-1"></i> Disclaimer & DMCA
-                    </h4>
-                    <p class="text-[12px] text-gray-400 leading-relaxed font-medium">ᴀʟʟ ꜰɪʟᴇꜱ, ʟɪɴᴋꜱ, ᴀɴᴅ ᴍᴇᴅɪᴀ ᴀᴄᴄᴇꜱꜱᴇᴅ ᴛʜʀᴏᴜɢʜ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴘᴜʙʟɪᴄʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. ᴛʜɪꜱ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ʜᴏꜱᴛ ᴏʀ ꜱᴛᴏʀᴇ ᴀɴʏ ꜰɪʟᴇꜱ ᴏɴ ɪᴛꜱ ᴏᴡɴ ꜱᴇʀᴠᴇʀꜱ.</p>
-                </div>
-                <div class="bg-gray-800/40 border-l-4 border-blue-500 p-4 rounded-r-xl">
-                    <h4 class="text-blue-400 font-bold mb-2 uppercase text-xs">
-                        <i class="fas fa-bullhorn mr-1"></i> Bot Updates
-                    </h4>
-                    <p class="text-[12px] text-gray-400 mb-3 font-medium">ꜱᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ ᴡɪᴛʜ ᴛʜᴇ ʟᴀᴛᴇꜱᴛ ᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛꜱ, ꜰɪxᴇꜱ, ᴀɴᴅ ɴᴇᴡ ʙᴏᴛ ʀᴇʟᴇᴀꜱᴇꜱ.</p>
-                    <a href="https://t.me/PrimeXBots" target="_blank" class="inline-flex bg-blue-500/20 text-blue-400 border border-blue-500/50 px-4 py-2 rounded-lg text-[10px] font-black uppercase hover:bg-blue-500/30">Join Channel <i class="fas fa-arrow-right ml-2"></i></a>
-                </div>
-                <div class="bg-gray-800/40 border-l-4 border-rose-500 p-4 rounded-r-xl">
-                    <h4 class="text-rose-400 font-bold mb-2 uppercase text-xs">
-                        <i class="fas fa-headset mr-1"></i> Contact Support
-                    </h4>
-                    <p class="text-[12px] text-gray-400 mb-3 font-medium">ꜰᴏʀ Qᴜᴇʀɪᴇꜱ, ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ, ᴏʀ ᴛᴀᴋᴇᴅᴏᴡɴ ʀᴇQᴜᴇꜱᴛꜱ, ʀᴇᴀᴄʜ ᴏᴜᴛ ᴛᴏ ᴜꜱ.</p>
-                    <a href="https://t.me/MR_PRIME_SUPREME" target="_blank" class="inline-flex bg-rose-500/20 text-rose-400 border border-rose-500/50 px-4 py-2 rounded-lg text-[10px] font-black uppercase hover:bg-rose-500/30">Contact Developer <i class="fas fa-paper-plane ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts Section -->
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script>
-        const fileUrl = "{{file_url}}";
-        const fileName = "{{file_name}}";
-
-        // ১. ভিডিও ইউআরএল ক্লিন করা (ডাবল প্রোটোকল ফিক্স)
-        function getCleanUrl() {
-            let url = fileUrl.trim();
-            if (url.startsWith("http:https://")) { url = url.replace("http:https://", "https://"); }
-            return url;
-        }
-
-        let player;
-        document.addEventListener('DOMContentLoaded', () => {
-            // ২. প্লেয়ার ইনিশিয়ালাইজ করা
-            player = new Plyr('#player', {
-                controls: [
-                    'play-large', 'play', 'progress', 'current-time', 
-                    'mute', 'volume', 'settings', 'fullscreen'
-                ],
-                ratio: '16:9'
-            });
-
-            // ৩. প্লেয়ার রেডি হলে কাস্টম ফিচার ইনজেক্ট করা
-            player.on('ready', () => {
-                const container = player.elements.container;
-
-                // ১. ব্রাইটনেস লেয়ার এবং পপ-আপ স্লাইডার তৈরি
-                const overlay = document.createElement('div');
-                overlay.id = 'brightness-overlay';
-                container.appendChild(overlay);
-
-                const brPopup = document.createElement('div');
-                brPopup.id = 'brightness-popup';
-                brPopup.innerHTML = `
-                    <span>BRIGHTNESS</span>
-                    <input type="range" id="br-slider" min="0" max="0.8" step="0.05" value="0.8">
-                `;
-                container.appendChild(brPopup);
-
-                // ২. ১০ সেকেন্ড বাটন এবং ব্রাইটনেস বাটন সেকশন তৈরি (বামে Rewind, ডানে Forward)
-                const controls = container.querySelector('.plyr__controls');
-                const middleSection = document.createElement('div');
-                middleSection.className = 'custom-player-btns';
-                middleSection.innerHTML = `
-                    <button id="custom-rewind" title="Rewind 10s"><i class="fas fa-backward"></i></button>
-                    <button id="br-toggle-btn" title="Brightness"><i class="fas fa-sun"></i></button>
-                    <button id="custom-forward" title="Forward 10s"><i class="fas fa-forward"></i></button>
-                `;
-
-                const playBtn = controls.querySelector('[data-plyr="play"]');
-                if (playBtn) playBtn.after(middleSection);
-
-                // ৩. ১০ সেকেন্ড আগে-পিছে যাওয়ার ম্যানুয়াল লজিক (১০০% ফিক্সড)
-                document.getElementById('custom-rewind').onclick = (e) => { 
-                    e.stopPropagation(); 
-                    // বর্তমান সময় থেকে ১০ সেকেন্ড কমিয়ে দেওয়া (পেছনে যাবে)
-                    player.currentTime = Math.max(0, player.currentTime - 10); 
-                };
-                
-                document.getElementById('custom-forward').onclick = (e) => { 
-                    e.stopPropagation(); 
-                    // বর্তমান সময়ের সাথে ১০ সেকেন্ড যোগ করা (সামনে যাবে)
-                    player.currentTime = Math.min(player.duration, player.currentTime + 10); 
-                };
-
-                // ৪. ব্রাইটনেস স্লাইডার টগল করা
-                const btn = document.getElementById('br-toggle-btn');
-                btn.onclick = (e) => {
-                    e.stopPropagation();
-                    brPopup.style.display = (brPopup.style.display === 'flex') ? 'none' : 'flex';
-                };
-
-                // ৫. ব্রাইটনেস ফিক্সড লজিক
-                document.getElementById('br-slider').oninput = (e) => {
-                    const val = parseFloat(e.target.value);
-                    document.getElementById('brightness-overlay').style.opacity = (0.8 - val);
-                };
-
-                window.addEventListener('click', () => { brPopup.style.display = 'none'; });
-                brPopup.onclick = (e) => e.stopPropagation();
-                
-                player.volume = 1;
-                player.muted = false;
-            });
-            player.on('play', () => { player.muted = false; });
-        });
-
-        // ৪. ওয়াচ অনলাইন ও অটো-রোটেট লজিক
-        function watchOnline() { 
-            if (player) { 
-                player.play(); 
-                player.fullscreen.enter(); 
-                
-                // অটো-রোটেট করার চেষ্টা (Landscape Mode)
-                if (screen.orientation && screen.orientation.lock) {
-                    screen.orientation.lock('landscape').catch(err => {
-                        console.log("Orientation lock blocked: ", err);
-                    });
-                }
-            } 
-        }
-
-        // ৫. ফিক্সড ডাউনলোড ফাংশন
-        function streamDownload() {
-            const a = document.createElement('a');
-            a.href = getCleanUrl();
-            a.download = fileName;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-
-        // --- ৬. এক্সটার্নাল প্লেয়ার ইন্টেন্ট লজিক (সব ফিক্সড) ---
-        function mx_player() { window.location.href = `intent:${getCleanUrl()}#Intent;action=android.intent.action.VIEW;type=video/*;package=com.mxtech.videoplayer.ad;end`; }
-        function vlc_player() { window.location.href = `intent:${getCleanUrl()}#Intent;action=android.intent.action.VIEW;type=video/*;package=org.
+                        <div class="col-lg-7 col-12 d-flex justify-content-start align-items-center ">
+                            <p class="h4 px-2 mt-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-orange-600 font-bold mb-2">Play with...</p>
+                        </div>
+                        <div class="col-lg-6 col-10 d-flex justify-center items-center flex-wrap pb-3 gap-2 wow animate__animated animate__fadeIn">
+                            <div onclick="vlc_player()" class="card card-body col-lg-3  col-5 bg-dark text-secondary text-center justify-content-center align-items-center hover:shadow-md hover:shadow-gray-400 hover:translate-y-[-5px] transition transition-all duration-300 wow animate__animated animate__fadeInLeft">
+                                <svg class="wow animate__animated animate__shakeX  animate__delay-1s" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 64 64"><linearGradient id="d2lfkA6lemjIH1JdWslHIa_74320_gr1" x1="32" x2="32" y1="16.021" y2="39.25" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset=".437" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><path fill="url(#d2lfkA6lemjIH1JdWslHIa_74320_gr1)" d="M32,31.25c2.891,0,5.255-0.323,6.939-0.712l2.409,7.664C37.765,39.116,33.881,39.25,32,39.25 c-1.88,0-5.765-0.134-9.347-1.049l2.408-7.663C26.745,30.927,29.11,31.25,32,31.25z M32.5,24.25c1.554,0,2.999-0.141,4.343-0.38 l-2.429-7.729c-0.587,0.063-1.211,0.109-1.914,0.109c-1.1,0-2.062-0.092-2.876-0.229l-2.404,7.651 C28.816,24.034,30.574,24.25,32.5,24.25z"></path><linearGradient id="d2lfkA6lemjIH1JdWslHIb_74320_gr2" x1="32.105" x2="32.105" y1="7.415" y2="56" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#d2lfkA6lemjIH1JdWslHIb_74320_gr2)" d="M56.903,50.041l-2.216-10.779c-0.513-2.265-2.52-3.847-4.881-3.847H45.09l-8.059-24.451 c-0.7-2.123-2.726-3.549-5.04-3.549c-2.314,0-4.339,1.426-5.039,3.549l-8.058,24.451h-4.491c-2.362,0-4.369,1.582-4.885,3.866 L7.31,50.021c-0.327,1.442,0.019,2.937,0.947,4.099C9.212,55.314,10.645,56,12.19,56h39.828c1.545,0,2.979-0.685,3.934-1.88 C56.88,52.958,57.226,51.464,56.903,50.041z M19.096,41.19l9.755-29.601c0.429-1.301,1.69-2.175,3.14-2.175s2.711,0.874,3.14,2.175 l9.774,29.655c0.201,0.72,0.088,1.331-0.357,1.923c-1.509,2.001-6.32,3.246-12.557,3.247c-0.004,0-0.007,0-0.011,0 c-6.223,0-11.017-1.229-12.511-3.208C19,42.586,18.886,41.933,19.096,41.19z M54.39,52.872C53.816,53.589,52.952,54,52.019,54H12.19 c-0.934,0-1.798-0.411-2.371-1.128C9.39,52.334,9.181,51.677,9.202,51H17v-2H9.561l0.411-2H14v-2h-3.616l1.089-5.297 c0.3-1.326,1.532-2.288,2.93-2.288h3.832l-1.05,3.188c-0.392,1.376-0.154,2.693,0.689,3.81c1.921,2.544,7.062,4.003,14.106,4.003 c0.003,0,0.008,0,0.011,0c7.06-0.002,12.219-1.476,14.153-4.044c0.823-1.093,1.058-2.37,0.678-3.694 c-0.003-0.013-0.007-0.025-0.011-0.038l-1.062-3.224h4.058c1.397,0,2.63,0.962,2.926,2.269L53.825,45H50v2h4.236l0.411,2H47v2h8.008 C55.029,51.671,54.821,52.332,54.39,52.872z"></path></svg>
+                                VLC Player
+                            </div>
+                            <div onclick="mx_player()" class="card card-body col-lg-3  col-5 bg-dark text-secondary text-center justify-content-center align-items-center hover:shadow-md hover:shadow-gray-400 hover:translate-y-[-5px] transition transition-all duration-300 wow animate__animated animate__fadeInRight">
+                                <svg class="wow animate__animated animate__shakeX animate__delay-2s" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#ffeb9b"></circle><circle cx="32" cy="32" r="21" fill="#f9dd8f"></circle><path fill="#8d6c9f" d="M32,6c14.336,0,26,11.664,26,26S46.336,58,32,58S6,46.336,6,32S17.664,6,32,6 M32,4	C16.536,4,4,16.536,4,32s12.536,28,28,28s28-12.536,28-28S47.464,4,32,4L32,4z"></path><path fill="#fff8ee" d="M42.5,31.134l-17-9
